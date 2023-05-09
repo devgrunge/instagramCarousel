@@ -1,5 +1,5 @@
 const instagramApi = () => {
-  const token = "IGQVJYX3lsSzJRTU0wakJ3UmU1WmVfTnczVUxUaDFXQnd4RGhOeGJRLTFzcG5sZA0hkNmx2dW9pT0pNVDVZAVUhlSmJMUUxlNlhNaTc2OER1OE1kTVhTa3pYSlZAvV2dpSThCUmZAmYkI5Uk9RTmtWWlBlcwZDZD";
+  const token = "YOUR_TOKEN_HERE";
   const url = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${token}`;
 
   fetch(url)
