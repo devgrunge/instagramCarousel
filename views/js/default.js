@@ -1,5 +1,8 @@
+/* insta carousel */
+console.log(location.pathname);
+	if(location.pathname === '/pt/' || location.pathname === '/en/'){
 const instagramApi = () => {
-  const token = "YOUR_TOKEN_HERE";
+  const token = "YOU_TOKEN_HERE";
   const url = `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp&access_token=${token}`;
 
   fetch(url)
@@ -40,3 +43,4 @@ const instagramApi = () => {
 };
 
 instagramApi();
+	}
