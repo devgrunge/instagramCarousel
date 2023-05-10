@@ -74,10 +74,3 @@ const instagramApi = () => {
 refreshAccessToken();
 instagramApi();
 	}
-
-/* Loader by checkout */
-if (location.pathname === '/pt/encomenda' || location.pathname === '/en/order') {
-    document.getElementsByClassName("btn btn-primary center-block")[0].addEventListener("click", function() {
-        document.getElementById("checkout-finish-loader").style.display = "block";
-    });
-}
